@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --background-white: #ffffff;
+  /* hero slogan, recommendations title, footer text */
+  --logo-blue: #335576;
+  /* get started botton */
+  --underline-orange: #db7a4e;
+  /* hero background */
+  --footer-background: #fefaf5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Prompt", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  position: fixed;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem 1rem 6rem;
+  background-color: var(--background-white);
+  vertical-align: baseline;
+}
+
+.nav__logo a {
+  font-size: 1.5rem;
+  color: var(--logo-blue);
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  padding-top: 0.5rem;
+}
+
+.nav__links a {
+  color: var(--logo-blue);
+  text-decoration: none;
+}
