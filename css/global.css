@@ -32,6 +32,11 @@ header {
   flex-direction: column;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav {
   position: fixed;
   width: 100vw;
@@ -43,7 +48,8 @@ header {
   background-color: var(--background-white);
   vertical-align: baseline;
   z-index: 999;
-  /* z-index because recommendation__card is relative and the overlayed __name is absolute */
+  /* z-index because recommendation__card is relative 
+  and the overlayed __name is absolute */
 }
 
 .nav__logo a {
@@ -52,12 +58,17 @@ header {
   text-decoration: none;
 }
 
+.nav__logo h3 {
+  width: 15vw;
+}
+
 .nav__links {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   width: 30vw;
   padding-top: 0.5rem;
+  margin-left: 3rem;
 }
 
 .nav__links a {
@@ -79,13 +90,13 @@ header {
   display: flex;
   justify-content: space-evenly;
   font-size: 1rem;
-  /* width: 100vw; */
 }
 
 .footer__card {
   display: flex;
   flex-direction: column;
   max-width: 23rem;
+  margin-right: 1rem;
 }
 
 .footer__card h1 {
@@ -122,7 +133,7 @@ header {
 .footer__card-social {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .footer__card-socials {
   display: flex;
@@ -132,4 +143,5 @@ header {
 
 .footer__card-socials img {
   height: 1.3rem;
+  margin-right: 0.5rem;
 }
