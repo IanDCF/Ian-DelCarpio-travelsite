@@ -48,13 +48,17 @@
 .recommend__cards-display {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 3.5rem 0 3.5rem;
+  justify-content: space-evenly;
+  padding: 1rem 9rem 1.5rem 9rem;
+}
+
+.recommend__card {
+  margin: 0 1rem 0 1rem;
 }
 
 .recommend__card img {
-  width: 20rem;
-  height: 30rem;
+  width: 15rem;
+  height: 23rem;
   border-radius: 5px;
   /* Check opacity 20% */
   border: 1px solid rgba(0, 0, 0, 0.2);

@@ -62,3 +62,64 @@ header {
   color: var(--logo-blue);
   text-decoration: none;
 }
+
+.footer {
+  color: var(--logo-blue);
+  background-color: var(--footer-background);
+  padding: 1rem 6rem 3rem 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1rem;
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 23rem;
+}
+
+.footer__card h1 {
+  margin: 0;
+}
+
+.footer__card p {
+  margin: 0;
+}
+.footer__text-orange {
+  color: var(--underline-orange);
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.footer__text-blue {
+  color: var(--logo-blue);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.footer__card-hours {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  width: 28rem;
+}
+
+.footer__card-hours-days {
+  width: 15rem;
+}
+
+.footer__card-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer__card-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 11vw;
+}
+
+.footer__card-socials img {
+  height: 1.3rem;
+}
