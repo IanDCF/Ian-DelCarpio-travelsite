@@ -42,6 +42,8 @@ header {
   padding: 1rem 6rem 1rem 6rem;
   background-color: var(--background-white);
   vertical-align: baseline;
+  z-index: 999;
+  /* z-index because recommendation__card is relative and the overlayed __name is absolute */
 }
 
 .nav__logo a {
@@ -61,11 +63,11 @@ header {
 .nav__links a {
   color: var(--logo-blue);
   text-decoration: none;
+  letter-spacing: 0.3px;
+  min-width: 2rem;
+  margin-right: 10px;
 }
 
-.nav__link--active:hover,
-.nav__link--active:focus,
-.nav__link--active:active,
 .nav__link--active {
   border-bottom: 2px solid var(--underline-orange);
 }
@@ -77,6 +79,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   font-size: 1rem;
+  /* width: 100vw; */
 }
 
 .footer__card {

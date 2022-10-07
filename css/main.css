@@ -54,6 +54,8 @@
 
 .recommend__card {
   margin: 0 1rem 0 1rem;
+  text-align: right;
+  position: relative;
 }
 
 .recommend__card img {
@@ -62,6 +64,14 @@
   height: 23rem;
   min-height: 23rem;
   border-radius: 5px;
-  /* Check opacity 20% */
   border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.recommend__name {
+  color: var(--background-white);
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 1.3rem;
 }
