@@ -58,7 +58,9 @@
 
 .recommend__card img {
   width: 15rem;
+  min-width: 15rem;
   height: 23rem;
+  min-height: 23rem;
   border-radius: 5px;
   /* Check opacity 20% */
   border: 1px solid rgba(0, 0, 0, 0.2);

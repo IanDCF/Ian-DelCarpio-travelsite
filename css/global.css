@@ -63,6 +63,13 @@ header {
   text-decoration: none;
 }
 
+.nav__link--active:hover,
+.nav__link--active:focus,
+.nav__link--active:active,
+.nav__link--active {
+  border-bottom: 2px solid var(--underline-orange);
+}
+
 .footer {
   color: var(--logo-blue);
   background-color: var(--footer-background);
