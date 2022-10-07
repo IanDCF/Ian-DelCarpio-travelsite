@@ -1,0 +1,135 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --background-white: #ffffff;
+  /* hero slogan, recommendations title, footer text */
+  --logo-blue: #335576;
+  /* get started botton */
+  --underline-orange: #db7a4e;
+  /* hero background */
+  --footer-background: #fefaf5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Prompt", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  position: fixed;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem 1rem 6rem;
+  background-color: var(--background-white);
+  vertical-align: baseline;
+  z-index: 999;
+  /* z-index because recommendation__card is relative and the overlayed __name is absolute */
+}
+
+.nav__logo a {
+  font-size: 1.5rem;
+  color: var(--logo-blue);
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  padding-top: 0.5rem;
+}
+
+.nav__links a {
+  color: var(--logo-blue);
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  min-width: 2rem;
+  margin-right: 10px;
+}
+
+.nav__link--active {
+  border-bottom: 2px solid var(--underline-orange);
+}
+
+.footer {
+  color: var(--logo-blue);
+  background-color: var(--footer-background);
+  padding: 1rem 6rem 3rem 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  /* width: 100vw; */
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 23rem;
+}
+
+.footer__card h1 {
+  margin: 0;
+}
+
+.footer__card p {
+  margin: 0;
+}
+.footer__text-orange {
+  color: var(--underline-orange);
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.footer__text-blue {
+  color: var(--logo-blue);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.footer__card-hours {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  width: 28rem;
+}
+
+.footer__card-hours-days {
+  width: 15rem;
+}
+
+.footer__card-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer__card-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 11vw;
+}
+
+.footer__card-socials img {
+  height: 1.3rem;
+}
